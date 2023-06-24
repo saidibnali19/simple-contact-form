@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: calibri;
+    max-width: 280px;
+    margin: 6rem auto;
+    outline: 2px dotted black;
+    outline-offset: 2rem;
+    background-color: beige;
+}
+
+form{
+    background-color: rgb(230, 209, 212);
+    padding: 2rem;
+}
+
+input{
+    padding: 3rem 1rem 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+div{
+    position: relative;
+}
+
+label{
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    pointer-events: none;
+    transition: transform 350ms;
+}
+
+input:focus,
+input:hover{
+    outline: 0;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    transform: translateY(-1rem);
+}
